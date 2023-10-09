@@ -12,6 +12,7 @@ add_library( drm-grabber ${DRMGrabberSOURCES} )
 
 target_link_libraries(drm-grabber
 	hyperion
+	${CMAKE_DL_LIBS}
 	${X11_LIBRARIES}
 	${X11_Xrandr_LIB}
 	${X11_Xrender_LIB}
